@@ -12,7 +12,7 @@ import (
 
 func main() {
     svc := lambda.New(session.New(&aws.Config{
-        Region: aws.String(getenv("PLUGIN_REGION", "us-east-1")),
+        Region: aws.String(getEnv("PLUGIN_REGION", "us-east-1")),
     }))
 
     input := &lambda.UpdateFunctionCodeInput{
