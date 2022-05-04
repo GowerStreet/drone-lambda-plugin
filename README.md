@@ -63,7 +63,6 @@ steps:
   image: plugins/s3
   settings:
     acl: private
-    region: us-east-1
     bucket: some-bucket
     target: lambda-dir
     source: lambda-project-${DRONE_BUILD_NUMBER}.zip
