@@ -4,11 +4,6 @@ workspace:
   base: /go
   path: src/github.com/GowerStreet/drone-lambda-plugin
 
-clone:
-  git:
-    image: plugins/git:next
-    pull: true
-
 slack: &slack
   image: plugins/slack
   webhook: "${SLACK_WEBHOOK}"
