@@ -1,4 +1,5 @@
-branches: [ master ]
+when:
+  - branch: [ master ]
 
 workspace:
   base: /go
